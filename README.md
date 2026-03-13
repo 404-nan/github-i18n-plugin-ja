@@ -1,29 +1,28 @@
-> 【GitHub中文社区】域名原域名githubs.cn变更为了 [https://gitcn.org](https://gitcn.org)
-# github-i18n-plugin
-GitHub.com 国际化插件。原链接：https://forum.github-zh.cn/topic/5
+# github-i18n-plugin-ja
 
-## 功能
-- 汉化GitHub菜单栏，标题，按钮等公共组件
-- 除基础组件汉化外，还支持对“项目描述”进行人机翻译
+GitHub.com を日本語表示にするユーザースクリプトです。  
+中国語版の github-i18n-plugin をベースに、日本語向けとして整理しています。
 
-## 安装
+## 機能
+- GitHub のメニュー、見出し、ボタンなど主要 UI を日本語化
+- リポジトリ説明文の自動翻訳（機械翻訳）
 
-本插件基于[油猴](https://www.baidu.com/s?wd=%E4%BB%80%E4%B9%88%E6%98%AF%E6%B2%B9%E7%8C%B4)开发，所以需要先安装油猴插件，支持的浏览器：Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。
+## インストール
+このスクリプトは [Tampermonkey（油猴）](https://www.tampermonkey.net/) で動作します。
 
-油猴安装完毕后，请点击[此链接](https://greasyfork.org/zh-CN/scripts/407485-github-internationalization)进入安装。
+1. ブラウザに Tampermonkey をインストール
+2. スクリプトを追加して有効化
 
-### [GitHub日本語](https://greasyfork.org/ja/scripts/407485-github-internationalization)
+対応ブラウザ: Chrome / Microsoft Edge / Safari / Opera / Firefox
 
-
-## 效果截图
+## スクリーンショット
 
 ![screenshot1](./images/screenshot1.png)
 
-## 贡献
-该插件由[GitHub中文社区](https://www.github-zh.com/)提供，目前只翻译了部分常用词条，欢迎补充完善，中文词条在`locales/zh-CN.js`目录中。大家在补充完善的过程，请依据[GitHub 词汇表](https://docs.github.com/en/github/getting-started-with-github/github-glossary)的官方译本对相关术语进行翻译，如有意见和疑问请到[原文](https://forum.github-zh.com/topic/5/)下留言。
-
-
+## 貢献
+翻訳辞書は `locales/ja.json` にあります。  
+追加・修正の際は GitHub 公式用語に合わせる方針でお願いします。
 
 ## TODO
-- 目前只翻译部分内容，需要持续更新词条
-- 自动翻译"仓库描述"
+- 未翻訳語彙の継続追加
+- リポジトリ説明文翻訳の改善

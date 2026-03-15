@@ -1,28 +1,28 @@
 # github-i18n-plugin-ja
 
-GitHub.com を日本語表示にするユーザースクリプトです。  
-中国語版の github-i18n-plugin をベースに、日本語向けとして整理しています。
+GitHub.com を日本語表示にする **Google Chrome 拡張機能（Manifest V3）** です。  
+中国語版の github-i18n-plugin をベースに、日本語向けへ再設計しています。
 
 ## 機能
 - GitHub のメニュー、見出し、ボタンなど主要 UI を日本語化
-- リポジトリ説明文の自動翻訳（機械翻訳）
+- 相対時刻（`relative-time`）を日本語表示
+- リポジトリ説明文の翻訳ボタン（Google 翻訳 API 利用）
 
-## インストール
-このスクリプトは [Tampermonkey（油猴）](https://www.tampermonkey.net/) で動作します。
+## インストール（開発者モード）
+1. このリポジトリをダウンロード
+2. Chrome で `chrome://extensions` を開く
+3. 右上の「デベロッパーモード」を ON
+4. 「パッケージ化されていない拡張機能を読み込む」で本ディレクトリを選択
 
-1. ブラウザに Tampermonkey をインストール
-2. スクリプトを追加して有効化
-
-対応ブラウザ: Chrome / Microsoft Edge / Safari / Opera / Firefox
+## 主要ファイル
+- `manifest.json`: 拡張機能定義
+- `content.js`: GitHub ページ上で動く翻訳処理
+- `locales/ja.json`: 日本語辞書
 
 ## スクリーンショット
 
 ![screenshot1](./images/screenshot1.png)
 
-## 貢献
-翻訳辞書は `locales/ja.json` にあります。  
-追加・修正の際は GitHub 公式用語に合わせる方針でお願いします。
-
 ## TODO
 - 未翻訳語彙の継続追加
-- リポジトリ説明文翻訳の改善
+- 翻訳対象の最適化

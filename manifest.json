@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub i18n Plugin JA",
+  "version": "1.0.0",
+  "description": "GitHub UI を日本語化する拡張機能",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://translate.googleapis.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "locales/ja.json"
+      ],
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ]
+    }
+  ]
+}
